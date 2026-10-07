@@ -514,6 +514,13 @@ Nuxt Studio (`nuxt-studio`, config `studio` in nuxt.config) edits the content in
 - `app/error.vue`: the 404 page in the same style. For unknown URLs Cloudflare serves the prerendered `404.html` (an empty app shell, as Nuxt renders it without SSR) with status 404; the app then finds no deck position for the path and shows this page.
 - `profile.yml`: `fullName`, `role` and `lookingFor` feed the intro and the metadata.
 
+## 9b. GitHub profile readmes
+
+- The readmes of both accounts (`readme/integr-dev.md`, `readme/e-reitbauer.md`; copied by hand into the `README.md` of the `integr-dev/integr-dev` and `e-reitbauer/e-reitbauer` repositories) are short text between images the site draws: a header (avatar drawn in block by block, name typed, a button to the site, bushes, the butterfly), the section titles, stats and languages, the contribution garden, recent activity and the newest post, and the button to the site. Everything that changes is in an image; the text in the readmes is static.
+- `modules/readme/` draws them on every build as SVG, light and dark (`/readme/<name>-<light|dark>.svg`, cached an hour; the readmes pick one with `<picture>`, which GitHub matches to the visitor's theme). The numbers are summed over both accounts from GitHub's GraphQL API (needs the `GITHUB_TOKEN` build variable; without it, as in dev, they are made up), the newest post comes from `content/en/posts`. The daily rebuild keeps them current.
+- The images use the site's colours, the bush generator (`app/themes/drafting/bush.ts`, shared with `PixelBush.vue`) and its fonts, embedded as subsets from Google Fonts; text is laid out with the fonts' real glyph widths. Each image animates in once. Animations inside an image are limited: only whole elements (no tspans), and a discrete change late in the image has to be a forwards fill.
+- In dev, the module runs when the dev server starts: after changing it, restart the dev server fully (a reload keeps the old module code).
+
 ## 10. Open items
 - Osmium has no screenshot yet. It uses a diagram until one exists.
 - Final wording of the intro pitch and the "why" lines.
