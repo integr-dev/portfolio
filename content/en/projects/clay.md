@@ -2,7 +2,7 @@
 title: Clay
 tagline: A documentation framework that drops into an existing repository.
 tier: flagship
-order: 2
+order: 1
 why: A complete toolchain I designed and maintain under its own organisation. A Vue and Nuxt frontend plus a Go CLI that turns a folder of Markdown into a deployable site.
 built:
   problem: "Most documentation tools want a project to adopt a static site generator and its build."

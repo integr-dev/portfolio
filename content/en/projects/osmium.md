@@ -2,7 +2,7 @@
 title: Osmium
 tagline: Runs a fleet of headless Minecraft agents that build one large schematic together.
 tier: flagship
-order: 1
+order: 2
 why: My largest system so far. One operator uploads a schematic, Osmium splits it into segments, hands each agent its slice, and a web dashboard follows every agent live.
 built:
   problem: "A dump of the database should never be enough to take over the Minecraft accounts the fleet plays with."

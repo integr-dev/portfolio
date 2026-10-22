@@ -3,16 +3,6 @@ import type { SheetDef } from './types'
 export const sheets: SheetDef[] = [
   { id: 'intro', title: 'Intro', mode: 'single', component: 'IntroSheet' },
   {
-    id: 'osmium',
-    path: '/projects/osmium',
-    title: 'Osmium',
-    mode: 'stack',
-    slides: [
-      { id: 'main', component: 'FlagshipSheet', props: { project: 'osmium', visual: 'left' } },
-      { id: 'readme', component: 'ReadmeSlide', props: { project: 'osmium' } },
-    ],
-  },
-  {
     id: 'clay',
     path: '/projects/clay',
     title: 'Clay',
@@ -20,6 +10,16 @@ export const sheets: SheetDef[] = [
     slides: [
       { id: 'main', component: 'FlagshipSheet', props: { project: 'clay', visual: 'left' } },
       { id: 'readme', component: 'ReadmeSlide', props: { project: 'clay' } },
+    ],
+  },
+  {
+    id: 'osmium',
+    path: '/projects/osmium',
+    title: 'Osmium',
+    mode: 'stack',
+    slides: [
+      { id: 'main', component: 'FlagshipSheet', props: { project: 'osmium', visual: 'left' } },
+      { id: 'readme', component: 'ReadmeSlide', props: { project: 'osmium' } },
     ],
   },
   {

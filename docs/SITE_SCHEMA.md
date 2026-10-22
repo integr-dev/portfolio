@@ -33,7 +33,7 @@ The site is a 2D grid of sheets:
 
 ```
  x →   00      01      02      03      04      05      06        07      08      09      10
-      Intro  Osmium   Clay  Forkcast Backbone Helix  Projects  Posts  Timeline Skills Contact
+      Intro   Clay   Osmium Forkcast Backbone Helix  Projects  Posts  Timeline Skills Contact
  y                                                    │         │
  ↓                                                  More      feed
                                                   (hidden     (free
@@ -123,9 +123,9 @@ To add a flagship: add `content/en/projects/<slug>.md` with `tier: flagship`, th
 - **No school name.**
 
 ### 01–05 · Flagships (`FlagshipSheet`, one per project)
-Order: **Osmium, Clay, Forkcast, Backbone, Helix.**
+Order: **Clay, Osmium, Forkcast, Backbone, Helix.**
 
-Every flagship sheet has the same layout: title and text stay together in one column, and the visual takes the other column. `visual: 'left' | 'right'` in `sheets.config.ts` picks the side (Osmium, Clay and Helix left; Forkcast and Backbone right). Slots:
+Every flagship sheet has the same layout: title and text stay together in one column, and the visual takes the other column. `visual: 'left' | 'right'` in `sheets.config.ts` picks the side (Clay, Osmium and Helix left; Forkcast and Backbone right). Slots:
 
 | Slot | Content |
 |---|---|
@@ -207,11 +207,11 @@ content/
   en/                       # English: the source of all content
     profile.yml
     projects/
-      osmium.md  clay.md  forkcast.md  backbone.md  helix.md
+      clay.md  osmium.md  forkcast.md  backbone.md  helix.md
       granum.md  scry.md  castl3d.md
       aether.md  konvert.md  content-automation.md
     readmes/
-      osmium.md  clay.md  forkcast.md  backbone.md  helix.md
+      clay.md  osmium.md  forkcast.md  backbone.md  helix.md
     posts/
       2026-09-27-new-page.md
     timeline.yml

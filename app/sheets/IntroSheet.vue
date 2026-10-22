@@ -21,7 +21,7 @@ const pushedWhen = computed(() => push && (now.value ? relativeTime(push.at, loc
 
 // shortcuts from the first screen to the places people look for most
 const shortcuts = [
-  { key: 'projects', sheet: 'osmium' },
+  { key: 'projects', sheet: 'clay' },
   { key: 'posts', sheet: 'posts' },
   { key: 'contact', sheet: 'contact' },
 ]
