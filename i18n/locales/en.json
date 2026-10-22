@@ -208,21 +208,23 @@
       "reset": "password reset"
     },
     "clay": {
-      "aria": "Clay: Markdown in docs/ and clay.yaml go into Clay Oven, a Go CLI that writes clay-structure.yaml and bundles it with the prebuilt Clay frontend into a static docs site.",
+      "aria": "Clay: Markdown in docs/ and clay.yaml go into clay build, the command line of the clay-doc npm package, which checks the docs and pre-renders every page with Clay's Nuxt app into a static docs site with a sitemap, llms.txt and social images.",
       "byHand": "written by hand",
       "title": "title",
-      "navbar": "navbar",
+      "theme": "theme",
       "languages": "languages",
-      "landing": "landing page",
-      "scan": "scan docs/",
-      "bundle": "bundle",
-      "ovenNote": "scans docs/, writes the structure, bundles the site",
-      "prebuilt": "prebuilt frontend",
-      "folder": "one folder, ready to deploy",
+      "openapi": "OpenAPI",
+      "checks": "check links",
+      "prerender": "pre-render pages",
+      "search": "search index",
+      "buildNote": "checks the docs, renders every page to HTML",
+      "app": "Nuxt app",
+      "folder": "publish/public, ready to deploy",
       "site": "docs site",
       "anyHost": "static, any host",
-      "siteNote": "the frontend loads everything it needs from the two yaml files",
-      "frontend": "Clay frontend"
+      "siteNote": "every page pre-rendered, readable without JavaScript",
+      "pages": "HTML + Markdown",
+      "images": "social images"
     }
   },
   "skills": {

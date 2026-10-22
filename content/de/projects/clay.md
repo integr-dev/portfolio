@@ -1,10 +1,12 @@
 ---
-tagline: Ein Dokumentations-Framework, das sich in ein bestehendes Repository einfügt.
-why: Eine komplette Toolchain, die ich unter einer eigenen Organisation entworfen habe und pflege. Ein Frontend mit Vue und Nuxt plus ein Go-CLI, das aus einem Ordner voller Markdown eine fertige Website macht.
+tagline: Macht aus einem Ordner voller Markdown eine schnelle, durchsuchbare Doku-Seite, bereit für Leser, Suchmaschinen und KI-Agenten.
+why: Ein komplettes Produkt, das ich unter einer eigenen Organisation entworfen habe und pflege. Auf npm als clay-doc veröffentlicht, inzwischen in Version 5, und die eigene Dokumentation ist eine Clay-Seite.
 built:
-  problem: Die meisten Doku-Tools verlangen, dass ein Projekt einen Static Site Generator und dessen Build übernimmt.
-  solution: 'Das Clay-Frontend kommt fertig gebaut und liest zur Laufzeit alles aus zwei Dateien: clay.yaml, von Hand geschrieben, und clay-structure.yaml, die Clay Oven, ein Go-CLI, beim Durchsuchen von docs/ erzeugt. Ein Repository bekommt nur Markdown und eine Konfigurationsdatei dazu.'
+  problem: Die meisten Doku-Tools verlangen, dass ein Projekt einen Static Site Generator, ein Theme und einen eigenen Build übernimmt.
+  solution: 'Clay ist ein einziges npm-Paket mit Kommandozeile. Ein Repository nimmt es als Dev-Abhängigkeit auf, schreibt Markdown in docs/ und eine clay.yaml, und clay build rendert jede Seite vorab zu einer statischen Website, mit Suchindex, Sitemap, Vorschaubildern und einer Markdown-Kopie jeder Seite für KI-Agenten. Derselbe Build prüft Links und Einstellungen.'
 alts:
-- Die Clay-Beispieldoku mit der Seite Advanced Features, Seitenleiste und hervorgehobenem Code
+- Die Startseite der Clay-Dokumentation mit Seitenleiste, einer Codegruppe im Terminal-Stil und dem Seitenmenü
+- Eine OpenAPI-Seite der Clay-Dokumentation mit einer Anfragezelle zum Ausprobieren des Endpunkts und einer Beispielantwort
+- Die Suchpalette im dunklen Theme mit Treffern nach Seite gruppiert und nach Abschnitt gefiltert
 ---
-Die Dokumentation liegt als einfaches Markdown in `docs/`. Clay Oven durchsucht sie, schreibt die Navigationsstruktur und bündelt sie mit einem fertig gebauten Clay-Frontend. Eine `clay.yaml` legt Titel, Navigationsleiste, Sprachen und Startseite fest.
+Seiten sind einfaches Markdown in `docs/`, mit Tabs, Schritten, Karten, Diagrammen, Formeln und OpenAPI-Seiten in derselben Syntax. `clay dev` zeigt jede Änderung sofort an, und mit `clay edit`, `clay check` und `clay search` überarbeiten Menschen und Coding-Agenten die Doku direkt im Terminal. Versionen, Übersetzungen, Themes und Analytics ohne Cookies stehen in `clay.yaml`.

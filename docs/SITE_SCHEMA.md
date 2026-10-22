@@ -138,8 +138,8 @@ Every flagship sheet has the same layout: title and text stay together in one co
 | `links` | Repo, live site, Modrinth, … |
 
 Draft "why" lines (to edit):
+- **Clay:** "A complete product I designed and maintain under its own org: an npm package and CLI, now at version 5, that turns Markdown into a docs site, and documents itself."
 - **Osmium:** "My largest system so far: a web dashboard that coordinates a fleet of headless agents working one large job together, with realtime telemetry, live 3D views and a custom host protocol."
-- **Clay:** "A complete toolchain I designed and maintain under its own org: a Vue/Nuxt docs frontend plus a Go CLI that turns Markdown into a deployable site."
 - **Forkcast:** "A team product with real UX depth: drag-and-drop planning, automatic shopping lists, and 9 languages including right-to-left."
 - **Backbone:** "Server logic you can change while the server runs: hot-reloadable Kotlin scripts with their own event bus, commands, GUIs and storage."
 - **Helix:** "Shipped to real users: 1,400+ downloads on Modrinth."
